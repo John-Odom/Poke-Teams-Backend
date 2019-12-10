@@ -1,4 +1,4 @@
-## Footy Lineups Backend
+## Poke Teams Backend
 
 This React/Rails app is used to build pokemon teams.  It pulls data from an external API (pokeapi.com) to gather the current Pokemon.  Then it only uses the first 151 characters from the original pokemon.
 
