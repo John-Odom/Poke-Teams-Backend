@@ -7,7 +7,8 @@ class TeamsController < ApplicationController
       def show
         team = Team.find_by(id: params[:id])
         pokemons = team.pokemons
-        render json: {id: team.id, name: team.name, pokemons: team.pokemons}
+        render json: team, include:[:pokemons]  
+        # {id: team.id, name: team.name, pokemons: team.pokemons}
       end
 
       def create
